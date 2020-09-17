@@ -1,0 +1,32 @@
+{% extends "base.html" %} 
+{% block content %}
+
+
+<!-- <p class="text">{{ fname }} successfully uploaded.</p> -->
+<div class="image-container">
+    <p class="text-center"><b>Original Image</b></p>     
+    <a href="./uploads/{{ fname }}" target="_new"><img src="./uploads/{{ fname }}" class="upload-image-thumb"></a>
+</div>
+    <div class="col-md-5">
+        <!-- <div class="image-container">
+            <p class="text-center"><b>Original Image</b></p>     
+            <a href="/uploads/{{ fname }}" target="_new"><img src="/uploads/{{ fname }}" class="upload-image-thumb"></a>
+        </div> -->
+        <center><div> 
+            <div class="image-container">
+                <p class="text-center"><b>The Results came as the given image is {{results}}</b></p>
+            </div>
+        </center>
+        
+        <center><div class="upload-form">
+            <p class="text-center">Upload another?</p>
+            <form action = "/uploaded" method = "POST" 
+                              enctype = "multipart/form-data">
+                <input type = "file" name = "file" />
+                <input type = "submit"/>
+            </form>
+        </div></center>      
+    </div>
+    
+
+{% endblock %}

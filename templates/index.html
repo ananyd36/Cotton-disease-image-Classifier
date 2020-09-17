@@ -1,0 +1,27 @@
+{% extends "base.html" %} 
+{% block content %}
+<style>
+    .text{
+      text-align: center;
+    }
+  </style>
+<center>
+    <h2>Image Classifier</h2>
+    <hr>
+    <p class="text">Cotton Disease Identification</p>
+    <p>Upload an cotton plant Image</p>
+    <!-- <div class="upload-form">
+        <form action = "/uploaded" method = "POST" enctype = "multipart/form-data">
+          <input type = "file" name = "file" >
+          <input type = "submit" value="Upload">
+        </form>
+      </div> -->
+      <div class="upload-form">
+        <form action = "/uploaded" method = "POST" enctype = "multipart/form-data">
+          <input type = "file" name = "file" >
+          <input type = "submit" value = "Upload" >
+        </form>
+      </div>
+</center> 
+  {% endblock %}
+  
