@@ -61,7 +61,7 @@ pickleshare==0.7.5
 Pillow==7.1.2
 prometheus-client==0.7.1
 prompt-toolkit==3.0.5
-protobuf==3.8.0
+protobuf==3.9.2
 ptyprocess==0.6.0
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
@@ -84,7 +84,7 @@ seaborn==0.10.1
 Send2Trash==1.5.0
 six==1.15.0
 sklearn==0.0
-tensorboard==2.2.1
+tensorboard==2.3.0
 tensorboard-plugin-wit==1.6.0.post3
 tensorflow
 termcolor==1.1.0
